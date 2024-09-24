@@ -1,0 +1,803 @@
+/* CSS Reset */
+body, header, a, nav, img, main, footer, h1, h2, h3, div, ul, figure, figcaption, table, caption, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for Mobile Viewport */
+.mobile {
+    display: block;
+}
+
+.tablet-desktop {
+    display: none;
+}
+
+body {
+    background-color: white;
+    font-family: "Quicksand", sans-serif;
+}
+
+/* Style rules for banner on home */
+.index-banner {
+    position: absolute;
+    top: 25%;
+    right: 0;
+    margin: auto;
+    padding: 1em;
+    background-color: rgb(0, 0, 0, 50%);
+}
+
+.index-banner h1, .index-banner p {
+    color: white;
+}
+
+.index-banner h1 {
+    text-align: right;
+    font-size: 2em;
+}
+
+.index-banner p {
+    margin-left: auto;
+    text-align: right;
+    line-height: 1.25;
+}
+
+/* Style rules for header, logo, hamburger, search, and cart icon */
+.logo-sticky { /* sticky */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    align-items: center; 
+}
+
+/* style rules for header area */
+header {
+    text-align: center;
+    background-color: white;
+    width: 102%;
+}
+
+/* header icons and search */
+#hamburger {
+    float: left;
+    padding-left: 4%;
+    padding-top: 2%;
+}
+
+#hamburger a, #shop-cart a {
+    text-decoration: none;
+    font-size: 1.75em;
+}
+
+#shop-cart {
+    float: right;
+    padding-right: 4%;
+    padding-top: 2%;
+}
+
+#search {
+    padding-bottom: 1%;
+}
+
+#search form {
+    text-align: center;
+}
+
+/* Style rules for nav, nav bar, and hamburger links */
+#hamburger-nav-links {
+    display: none;
+}
+
+#horizontal-span {
+    display: block;
+    border: 0.75em solid #3E7CB1;
+    background-color: #3E7CB1;
+}
+
+/* style rules for jacob pages */
+#review {
+    display: block;
+    text-align: center;
+}
+
+#review textarea {
+    width: 40%;
+    height: 8em;
+}
+
+#btn {
+    background-color: #DBE4EE;
+    font-size: 20px;
+    border-radius: 8px;
+    transition-duration: 0.2s;
+    margin: 1%;
+}
+
+#btn:hover {
+    background-color: #81A4CD;
+}
+
+.img-fluid {
+    text-align: center;
+}
+
+#list li {
+    list-style: none;
+}
+
+.portrait {
+    width: 30%;
+}
+
+#info {
+    padding: 2%;
+}
+
+#heading {
+    color: #81A4CD;
+    text-align: center;
+}
+
+/* Animation to make image rotate when hovering over it */
+.portrait:hover {
+    animation-name: rotate;
+    animation-duration: 2s;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* back to nav style rules */
+nav {
+    text-align: center;
+    /* rgb(247, 247, 247) */
+    background-color: #3E7CB1;
+    width: 100%;
+}
+
+nav a {
+    display: block;
+    padding: 1.05%;
+    text-decoration: none;
+    color: #DBE4EE;
+    border-bottom: white solid 2px;
+}
+
+nav a:first-child {
+    padding-top: 1.%;
+}
+
+nav a:last-child {
+    border: none;
+}
+
+/* Style rules for main content */
+.h-newsletter form {
+    text-align: center;
+}
+
+#banner-img img {
+    display: block;
+    max-width: 100%;
+}
+
+#home-container, #support-container {
+    padding: 3%
+}
+
+
+main {
+    background-color: rgb(240, 240, 240);
+    padding: 0.5%;
+    font-size: 1.05em;
+}
+
+h1 {
+    text-align: center;
+    padding: 0.75%;
+    padding-bottom: 0.5%;
+    padding-top: 2%;
+    font-size: 2em;
+    color: #3E7CB1;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+
+#support-container, #b-container {
+    font-size: 1.15em;
+    padding: 0 5% 5% 5%;
+}
+
+#support-container main, #b-container main {
+    background-color: aliceblue;
+}
+
+#support-container h3, #home-container h3, #b-container h3 {
+    padding-top: 1%;
+    padding-left: 1%;
+    font-size: 1.15em;
+    font-style: italic;
+}
+
+#support-container a, #b-container {
+    text-decoration: none;
+}
+
+#support-faq {
+    list-style: none;
+}
+
+#support-faq p {
+    font-weight: bold;
+}
+
+#support-faq li {
+    padding-left: 5%;
+}
+
+.map {
+    display: block;
+    text-align: center;
+}
+
+#special-important {
+    color: #F17300;
+}
+
+.grid-prod-box, .grid-member-box, .grid-review-box {
+    position: relative;
+    max-width: 100%;
+}
+
+.grid-prod-box a, .grid-member-box a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 2%;
+}
+
+.grid-prod-box figure {
+    max-width: 100%;
+}
+
+.product-cap {
+    border: #81A4CD solid 3px;
+    bottom: 0;
+    background: #3E7CB1;
+    font-size: 1.75em;
+    font-style: italic;
+    text-align: center;
+    padding: 0.5%;
+    margin: 2%; 
+}
+
+.product-cap a {
+    text-decoration: none;
+    color: #DBE4EE;
+}
+
+#b-container #b-img {
+    display: block;
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    border-right: #054A91 solid 2px;
+    border-bottom: #054A91 solid 2px;
+}
+
+.b-contact a {
+    text-decoration: none;
+}
+
+.b-contact img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Style rules for footer */
+#home-container footer {
+    background-color: #3E7CB1;
+    width: 100%;
+    color: white;
+    padding-bottom: 1%;
+}
+
+#home-container #site-dev a {
+    color: white;
+}
+
+
+footer {
+    background-color: rgb(240, 240, 240);
+    display: block;
+    text-align: center;
+}
+
+
+#muerte h1 {
+    color: black;
+
+}
+
+#muerte figure {
+    display:inline flex;
+ 
+}
+
+#muerte .caption{
+    padding-left:0px; 
+}
+
+#muerte img{
+    text-align:center;
+    margin:60px auto;
+    padding-left: 50%; 
+}
+
+
+#box {
+    width: 200px;
+    height: 50px;
+    border: 1px solid black;
+    padding: 50px;
+    margin: 50px;
+    background-color: #ecbc8f;
+}
+
+.grid-boxes{
+    position: relative;
+    max-width: 100%;
+}
+
+.grid-boxes h1, .grid-boxes h4, .grid-boxes p{
+    color: black;
+    text-align: center;
+    padding-top: auto  ;
+
+}
+.grid-boxes a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 2%;
+
+}
+
+.grid-boxes img{
+
+    padding: 20%;
+}
+
+.grid-support {
+
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 2%;
+  
+}
+
+#muerte ul{
+    margin:0px 20px;
+    display:inline-block;
+    text-decoration:none;
+    color:black;
+    display:inline flex;
+
+}
+
+#site-dev a {
+    text-decoration: none;
+    padding-left: 0.5%;
+}
+
+#support-container footer, #b-container footer {
+    background-color: #3E7CB1;
+    color: white;
+    padding-bottom: 1%;
+}
+
+#home-container #site-dev a, #support-container #site-dev a, #b-container #site-dev a {
+    color: white;
+}
+
+#port-img {
+    display: block;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border: #054A91 solid 3.5px;
+}
+
+.grid-member-box {
+    padding: 1% 0;
+}
+
+
+
+
+/* Style Rules for Tablet Viewport */
+@media screen and (min-width: 630px) {
+    /* changing from mobile to tablet-desktop */
+    .mobile {
+        display: none;
+    }
+
+    .tablet-desktop {
+        display: block;
+    }
+
+    /* Style rules for header, logo, search, and cart icon */
+    .logo-sticky {
+        /* as the hamburger icon is gone */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .index-banner {
+        top: 35%;
+        padding: 1.25em;
+    }
+
+    #search {
+        padding-bottom: 0;
+    }
+    .grid-product {
+        display: grid;
+    }
+
+    .grid-product, .grid-reviews {
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 5px;
+    }
+
+    /* Style rules for nav, nav bar*/
+    nav {
+        font-size: 20px;
+        margin-bottom: 0.75%;
+        margin-top: 0.75%;
+        padding: 0.05% 2%;
+    }
+
+    nav ul {
+        padding-top: 0.5%;
+        padding-bottom: 0.75%;
+        list-style: none;
+        text-align: center;
+    }
+
+    nav li {
+        border-top: none;
+        display: inline-block;
+    }
+
+    nav li a {
+        color: #DBE4EE;
+        padding: 1em 1em;
+    }
+
+    /* Style rules for main content */
+    .h-newsletter {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    #banner-img img{
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+        padding-bottom: 1%;
+    }
+
+    #support-container, #b-container {
+        padding: 0 5% 5% 5%;
+    }
+
+    #support-container h2 {
+        padding-top: 2%;
+        padding-bottom: 0.1%;
+    }
+
+    #support-primer {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    .support-img {
+        position: absolute;
+        left: 62%;
+        top: 80%;
+        border: #3E7CB1 solid 4px;
+        max-width: 30%;
+        background-color: rgb(240, 240, 240);
+    }
+
+    .support-img figcaption {
+        padding: 2%;
+    }
+
+    .support-img img {
+        margin: auto;
+        max-width: 100%;
+        padding: 0;
+        border-bottom: #3E7CB1 solid 2px;
+    }
+
+    .support-table {
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        width: 25%;
+        padding-bottom: 5%;
+    }
+    
+    .support-table table, .support-table tr, .support-table th, .support-table td {
+        border: #000 solid 2px;
+        border-collapse: collapse;
+    }
+    
+    .support-table table {
+        background-color: #ff932d;
+    }
+    
+    .support-table table caption {
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .support-table th, .support-table td {
+        padding: 5px;
+    }
+    
+    .support-table th {
+        font-style: italic;
+        font-weight: 550;
+    }
+
+    #help-list {
+        max-width: 60%;
+        padding-left: 1%;
+    }
+
+    #support-animation {
+        position: relative;
+        height: 50px;
+        width: 50px;
+        padding: 0.5%;
+        left:5%;
+        animation-name: support-anim;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+
+    #support-animation img {
+        max-width: 100%;
+    }
+
+    @keyframes support-anim {
+        0% {left: 0; transform: rotate(0deg);}
+        20% {left: 1%; transform: rotate(60deg);}
+        45% {left: 0; transform: rotate(-40deg);}
+        55% {left: 1%; transform: rotate(60deg);}
+        70% {left: 0; transform: rotate(-40deg);}
+        100% {left: 0; transform: rotate(0deg);}
+    }
+
+    .grid-home, .grid-members, .grid-reviews {
+        display: grid;
+    }
+
+    .grid-reviews {
+        grid-gap: 10px;
+    }
+
+    .grid-home, .grid-reviews {
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 5px;
+    }
+
+    .grid-members {
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
+    }
+
+    .product-cap {
+        font-size: 1.5em;
+    }
+
+    .grid-member-box {
+        margin: auto;
+    }
+
+    .grid-review-box {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .grid-review-box blockquote {
+        border: #000 solid 1px;
+        padding: 5%;
+    }
+
+    #port-img {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        border-width: 4px;
+    }
+
+    #b-container h2, #b-container h3 {
+        text-align: center;
+    }
+    
+    #b-container p {
+        padding: 0 5%;
+        font-size: 1.1em;
+    }
+}
+
+
+/* Style Rules for Desktop Viewport */
+@media screen and (min-width: 1015px) {
+    /* Style rules for header, logo, search, and cart icon */
+    header a img {
+        width: 25%;
+    }
+    
+    main {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .index-banner {
+        top: 80%;
+    }
+
+    .index-banner h1 {
+        font-size: 4em;
+    }
+    
+    .index-banner p {
+        font-size: 2em;
+        width: 29%;
+        line-height: 1.75;
+    }
+
+    /* Style rules for nav, nav bar*/
+    nav ul {
+        padding: 1% 0;
+
+    }
+
+    nav li a {
+        padding: 1% 1.75em;
+    }
+
+    nav li:hover, nav li a:hover {
+        color: #054A91;
+        background-color: #DBE4EE;
+        border: #DBE4EE solid 1px;
+    }
+
+    nav li:active, nav li a:active {
+        color: #DBE4EE;
+        background-color: #DBE4EE;
+    }
+
+    /* Style rules for main content */
+    #banner-img img{
+        width: 100%;
+    }
+
+    main {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .first-header {
+        padding-top: 2%;
+    }
+
+    h1 {
+        padding-top: 5%;
+    }
+
+    .grid-home {
+        grid-gap: 15px;
+    }
+
+    .product-cap {
+        font-size: 2.05em;
+    }
+
+    .product-cap:hover {
+        background: #F17300;
+        font-weight: bold;
+    }
+
+    .support-table {
+        width: 31%;
+    }
+
+    .support-table th, .support-table td {
+        padding: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+/* styles to change radio buttons to stars for a review */
+.rating {
+    display: inline-block;
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    font-size: 50px;
+  }
+  .rating label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    cursor: pointer;
+  }
+  .rating label:last-child {
+    position: static;
+  }
+  .rating label:nth-child(1) {
+    z-index: 5;
+  }
+  .rating label:nth-child(2) {
+    z-index: 4;
+  }
+  .rating label:nth-child(3) {
+    z-index: 3;
+  }
+  .rating label:nth-child(4) {
+    z-index: 2;
+  }
+  .rating label:nth-child(5) {
+    z-index: 1;
+  }
+  .rating label input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  .rating label .icon {
+    float: left;
+    color: transparent;
+  }
+  .rating label:last-child .icon {
+    color: #000;
+  }
+  .rating:not(:hover) label input:checked ~ .icon,
+  .rating:hover label:hover input ~ .icon {
+    color: #F17300;
+  }
+  .rating label input:focus:not(:checked) ~ .icon:last-child {
+    color: #000;
+    text-shadow: 0 0 5px #F17300;
+  }
+/* Add style rules for larger desktop viewports? Not necessary */
+
+/* Add style rules for printing to do only black and white? Not necessary. */
