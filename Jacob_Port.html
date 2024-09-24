@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>Tech Trove Co.</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/Treasure_Chest.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- Logo -->
+        <a href="index.html"><img id="logo" class="sticky" src="images/logo.png"></a>
+
+        <!-- hamburger here? -->
+        <div id="hamburger" class="mobile">
+            <a class="hamburger-icon" onclick="hamburgerToggle()">&#9776;</a>
+        </div>
+
+        <!-- shop cart, WIP -->
+        <div id="shop-cart">
+            <!-- Placeholder until we get shopping cart icon -->
+            <a href="shopping">&#9816;</a>
+        </div>
+
+        <!-- 'search' bar. text input with button to click and search -->
+        <form id="search">
+            <input type="text" name="search-query" placeholder="Search">
+            <!-- magnifying glass emoji is placeholder -->
+            <input type="button" id="search-button" name="search-submit" value="&#128269;">
+        </form>
+    </header>
+
+    <!-- Mobile nav with hamburger -->
+    <nav class="mobile">
+        <div id="hamburger-nav-links">
+        <!--TODO update these links with correct .html files-->
+            <a href="index.html">Home</a>
+            <a href="Info.html">Business Info</a>
+            <a href="product-services.html">Product/Services</a>
+            <a href="support.html">Support</a>
+        </div>
+
+        <p id="horizontal-span"></p>
+    </nav>
+
+    <!-- Tablet, Desktop Nav -->
+	<nav class="tablet-desktop">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="Info.html">Business Info</a></li>
+			<li><a href="product-services.html">Product/Services</a></li>
+			<li><a href="support.html">Support</a></li>
+		</ul>
+	</nav>
+
+
+    <div id="container">
+
+        <main>
+            <h1>Jacob Davenport</h1>
+
+            <img src="images/j-port-img-home.png" alt="picture of Jacob" class="portrait" id="port-img">
+            
+            
+            <div id="info">
+                <!-- section for a short introduction to me -->
+                <h2 id="heading">About Me</h2>
+
+                <p>My name is Jacob Davenport, I am a purpose driven person with a passion for computer science. This portfolio showcases my skills, experiences and accomplishments to programming.</p>
+
+            
+                <!-- Section to explain my skills and expertise -->
+                <h2 id="heading">Skills and Expertise</h2>
+
+                <ul id="list">
+                    <h4>Technical skills</h4>
+                    <li>Proficient in programming languages such as Python, Java, and HTML</li>
+                    <li>Experience with cloud platforms such as Google Cloud and Github</li>
+                    <li>Familiar with a few different DevOps tools such as Git and Azure DevOps</li>
+                    <h4>Soft Skills</h4>
+                    <li>Effective communicator with the ability to collaborate across interdisciplinary teams</li>
+                    <li>Strong problem-solving skills with a focus on innovation and continuous improvement</li>
+                    <li>Adaptable and quick to learn new technologies and methodologies</li>
+                </ul>
+
+                <!-- Section to explain my Experience -->
+                <h2 id="heading">Experience</h2>
+
+                <ul id="list">
+                    <h4>Software Engineer, Apple(2021-2023)</h4>
+                    <li>Helped develop the latest IOS versions for apple phones.</li>
+                    <li>Led a team of developers to fix hundreds of bugs in the IOS software.</li>
+                </ul>
+
+                <!-- Section to outline my projects and accomplishments -->
+                <h2 id="heading">Projects and Accomplishments</h2>
+
+                <ul id="list">
+                    <h4>Project: AI-powered Chatbot Integration</h4>
+                    <li>Designed and implemented an AI-powered chatbot for customer support, reducing response times by 50% and improving customer satisfaction.</li>
+                    <li>Implemented natural language processing algorithms to enhance chatbot's conversational abilities and accuracy.</li>
+                </ul>
+
+                <!-- Section outlining my education and Certifications -->
+                <h2 id="heading">Education and Certifications</h2>
+
+                <ul id="list">
+                    <h4>Bachelor of Science in Computer Science, Southern Utah University, 2019-2023</h4>
+                    <li>Relevent coursework: Data Structures, Algorithms, Machine Learning</li>
+                    <h4>Certifications</h4>
+                    <li>Google Cloud Professional Cloud Developer</li>
+                    <li>Github Advanced Security Certified</li>
+                </ul>
+
+                <!-- Section to give contact information -->
+                <h2 id="heading">Contact Information</h2>
+
+                <ul id="list">
+                    <li>Jacob Davenport</li>
+                    <li>Email: jacob.davenport1904@gmail.com</li>
+                    <li>Phone: (435)246-9280</li>
+                </ul>
+            </div>
+
+        </main>
+
+        
+        <footer>
+            
+            <p>&copy; Copyright 2024. All Fictional Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

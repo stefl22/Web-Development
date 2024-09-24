@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<!-- Page made by Ben Pimentel -->
+
+<html lang="en">
+<head>
+	<title>Tech Trove</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="images/Treasure_Chest.png">
+</head>
+
+<body>
+    <header>
+        <!-- Logo -->
+        <a href="index.html"><img class="logo-sticky" src="images/logo.png"></a>
+
+        <!-- hamburger here? -->
+        <div id="hamburger" class="mobile">
+            <a class="hamburger-icon" onclick="hamburgerToggle()">&#9776;</a>
+        </div>
+
+        <!-- shop cart, WIP -->
+        <div id="shop-cart">
+            <!-- Placeholder until we get shopping cart icon -->
+            <a href="shopping">&#9816;</a>
+        </div>
+
+        <!-- 'search' bar. text input with button to click and search -->
+        <form id="search">
+            <input type="text" name="search-query" placeholder="Search">
+            <!-- magnifying glass emoji is placeholder -->
+            <input type="button" id="search-button" name="search-submit" value="&#128269;">
+        </form>
+    </header>
+
+    <!-- Mobile nav with hamburger -->
+    <nav class="mobile">
+        <div id="hamburger-nav-links">
+        <!--TODO update these links with correct .html files-->
+            <a href="index.html">Home</a>
+            <a href="Info.html">Business Info</a>
+            <a href="product-services.html">Product/Services</a>
+            <a href="support.html">Support</a>
+        </div>
+
+        <p id="horizontal-span"></p>
+    </nav>
+
+    <!-- Tablet, Desktop Nav -->
+	<nav class="tablet-desktop">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="Info.html">Business Info</a></li>
+			<li><a href="product-services.html">Product/Services</a></li>
+			<li><a href="support.html">Support</a></li>
+		</ul>
+	</nav>
+
+
+    <!-- support content -->
+    <div id="support-container">
+
+        <!-- image of support/call center for tablet desktop -->
+        <div class="tablet-desktop">
+            <article class="support-img">
+                <figure>
+                    <img src="images/people-working-call-center.jpg" alt="smiling people working in tech trove's customer support center">
+                    <figcaption>Our support is available 24/7 for all your related inquiries and needs!</figcaption>
+                </figure>
+            </article>
+        </div>
+
+        <!-- start of main element -->
+        <main>
+            <h1 class="first-header">Support</h1>
+                <hr>
+                <!--Just support info, basic -->
+                <div class="mobile">
+                    <p>At Tech Trove, we strive to provide the best support for our customers. If you're not satisified, neither are we!</p>
+
+                </div>
+
+                <!-- Support info -->
+                <div class="tablet-desktop">
+                    <p id="support-primer">It is our mission to provide the best possible experience for our custoemrs. However, sometimes problems and issues might arise. That's what we're here for. Tech Trove has been ranked as one of the top companies in the nation for its renowned customer support. From order issues to returns, we have it all. As we say here at Tech Trove; If you're not satisified, neither are we!</p>
+
+                    <h3>Quality Support Options</h3>
+                        <p>Experts rank Tech Trove the best when it comes to services and customer satisfaction!</p>
+
+                    <p>Everytime this phone rings, we've helped and made another satisified customer!</p>
+                    <div class="tablet-desktop" id="support-animation"><img src="images/Phone_icon.png" alt="phone icon"></div>
+                </div>
+
+                <!-- How Can we Help, mobile -->
+                <div class="mobile">
+                    <h2>How Can We Help?</h2>
+                    <p>Tech Trove offers an abundance of services, such as Installation, Repair, and Trade In services!</p>
+                </div>
+
+                <div class="tablet-desktop">
+                    <!-- listed out help list for tablet desktop -->
+                    <section id="help-list">
+                        <h2>How Can We Help?</h2>
+                        <p>Tech Trove offers an abundance of services to offer you. Just ask!</p>
+                        <h3>Install Service</h3>
+                            <p>Got a brand new SSD you want installed into your device, or some additional RAM modules to boost performance, but lack the tools and expertise? Don't worry! We've got you covered.</p>
+                        <h3>Repair Service</h3>
+                            <p>We'll find out what's going on!</p>
+                        <h3>Trade In</h3>
+                            <p>Don't like your machine? Want something new? Bring in your old computer, machine, or device and receive store credit! (The amount of store credit given per client depends on multiple factors such as device, device condition, age, and so forth. Tech Trove reserves the right to keep devices that have completely undergone the trade in process, regardless if client changes their mind.)</p>
+                    </section>
+                </div>
+
+            <!-- Include a TABLE here!! (not on mobile?) -->
+            <h2>Refund and Return Policies</h2>
+                <!-- basics -->
+                <div class="mobile">
+                    <p>Not happy with the product you purchased? Did it get damaged before entering your care? No problem! Each item sold at Tech Trove has a 30-day refund and return period! Simply fill out the appropriate forms, and an agent will get in contact with you! (After 30 days, items may no longer be refunded, but can still be returned for a new replacement for another 30 days.)</p>
+
+                </div>
+
+                <!-- refund and return policy with more details and toggleable table! -->
+                <div class="tablet-desktop">
+                    <p>Not happy with the product you purchased? Did it get damaged before entering your care? No worries! Each item sold at Tech Trove has a 30-day refund and return period! This period begins as soon as we recieve confirmation that your item has been delievered! After 30 days, items may no longer be refunded. After another 30 days, items may no longer be returned or replaced. To begin your refund or return claim, fill out the appropriate forms  and an agent will get in contact with you about your claim. If your refund or return claim has been accepted by us, you will be required to ship the item back to us. A shipping label will be provided for your convenience.</p>
+
+                    <button id="toggler-button" onClick="supportTableToggle()">Click for More Info</button>
+
+                    <div class="support-table" id="info-table">
+                        <table>
+                            <caption>Product Refund and Return Periods:</caption>
+                            <tr> <!-- Row 1 -->
+                                <th></th>
+                                <th>Refund, Return</th>
+                                <th>Return</th>
+                            </tr>
+
+                            <tr> <!-- Row 2 -->
+                                <th>After Delivery</th>
+                                <td>30 days</td>
+                                <td>60 days</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+
+            <h2>Frequently Asked Questions (FAQ)</h2>
+                <!-- just basic info -->
+                <div class="mobile">
+                    <p>Not what you're looking for? Check out these FAQs and see if your problem has been previously addressed. If not, give us a call!</p>
+                    <ul id="support-faq">
+                        <p>Q: Can I cancel my order?</p>
+                        <li>A: Yes. However, once the order is shipped, you cannot cancel it.</li>
+
+                        <p>Q: What happens if my order arrives and something missing, wrong, or damaged?</p>
+                        <li>A: File a necessary Return or Refund form depending. Provide necessary proof of the claim in the form. Please note it may take several business days for your claim to be processed.</li>
+
+                        <p>Q: I filled out the refund form and I haven't received my refund yet. Where is it?</p>
+                        <li>A: If your refund form has been accepted, you will be sent a shipping label to return the item(s) back to us. After receiving the items, it may take up to several business days to verify the contents of the refund and then issue the refund.</li>
+
+                        <p>Q: Can I add/remove/change my order?</p>
+                        <li>A: No, once the order has been processed, you cannot change the order.</li>
+
+                        <p>Q: Can I change my delivery address?</p>
+                        <li>A: Unfortunately, once the order has been processed, the address cannot be changed. We are required to verify addresses and notify the customer if there is a discrepency before their order has been shipped. If your order has not been shipped yet, you may still cancel the order and try again!</li>
+                    </ul>
+
+                </div>
+
+                <!-- Come up with 3 - 5, may be comedic for some? -->
+                <div class="tablet-desktop">
+                    <p>We strive to accomodate for nearly every potential outcome, but sometimes things can happen. If you don't see an issue covered above, take a look at these FAQs and see if your problem has been previously addressed. Tech Trove keeps a record of each customer support issue and updates this section over time. However, if you don't see your issue and don't want to wait, give us a call and we'll help your through your problem!</p>
+                    <ul id="support-faq">
+                        <p>Q: Can I cancel my order?</p>
+                        <li>A: Yes. After your it has been processed, you can cancel the order if it does not satisfy what you're looking to purchase. However, once the order has been sent to be shipped, you cannot cancel it. Instead, you will need to wait and submit the necessary return or refund form(s).</li>
+
+                        <p>Q: What happens if my order arrives and something missing, wrong, or damaged?</p>
+                        <li>A: File a necessary Return or Refund form depending. Provide necessary proof of the claim in the form. Please note it may take several business days for your claim to be processed. If the order is a device or device component and was stolen in your care, you may be asked to provide a report or document from the police so that we may update our records that the item has been stolen.</li>
+
+                        <p>Q: I filled out the refund form and I haven't received my refund yet. Where is it?</p>
+                        <li>A: If your refund form has been accepted, you will be sent a shipping label to return the item(s) back to us in the condition they were receieved. After receiving the items, it may take up to several business days to verify the contents of the refund and then issue the refund. Please note we will not refund any amount spent on shipping and handling.</li>
+
+                        <p>Q: Can I add/remove/change my order?</p>
+                        <li>A: No, once the order has been processed, you cannot add, remove, or change the item(s) in the order. Please double check your cart on checkout to ensure you are purchasing everything you want.</li>
+
+                        <p>Q: Can I change my delivery address?</p>
+                        <li>A: Unfortunately, once the order has been processed, the address cannot be changed. This is to protect us and prevent fraud. We are required to verify addresses and notify the customer if there is a discrepency before their order has been shipped. If your order has not been shipped yet, you may still cancel the order and try again!</li>
+                    </ul>
+                </div>
+
+            <h2>More Information</h2>
+                <!-- links back to business info page -->
+                <div class="mobile">
+                    <p>Not sure what we do and what we're about? Check out our <a href="Info.html">Business Information</a> page!</p>
+
+                </div>
+
+                <!-- links back to business info page, not much here -->
+                <div class="tablet-desktop">
+                    <p>Curious about Tech Trove and want to learn more? No problem! Please check out our <a href="Info.html">Business Information</a> page!</p>
+                </div>
+        </main>
+
+        <!-- footer content -->
+        <footer>
+            <hr>
+            <p>&copy; Copyright 2024. All Fictional Rights Reserved.</p>
+
+            <!-- made by me -->
+            <div id="site-dev">
+                <p>Made by:
+                    <a id="ben" href="b-portfolio.html">Ben Pimentel</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

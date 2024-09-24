@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>Tech Trove</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/Treasure_Chest.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- Logo -->
+        <a href="index.html"><img id="logo" class="sticky" src="images/logo.png"></a>
+
+        <!-- hamburger here? -->
+        <div id="hamburger" class="mobile">
+            <a class="hamburger-icon" onclick="hamburgerToggle()">&#9776;</a>
+        </div>
+
+        <!-- shop cart, WIP -->
+        <div id="shop-cart">
+            <!-- Placeholder until we get shopping cart icon -->
+            <a href="shopping">&#9816;</a>
+        </div>
+
+        <!-- 'search' bar. text input with button to click and search -->
+        <form id="search">
+            <input type="text" name="search-query" placeholder="Search">
+            <!-- magnifying glass emoji is placeholder -->
+            <input type="button" id="search-button" name="search-submit" value="&#128269;">
+        </form>
+    </header>
+
+    <!-- Mobile nav with hamburger -->
+    <nav class="mobile">
+        <div id="hamburger-nav-links">
+        <!--TODO update these links with correct .html files-->
+            <a href="index.html">Home</a>
+            <a href="Info.html">Business Info</a>
+            <a href="product-services.html">Product/Services</a>
+            <a href="support.html">Support</a>
+        </div>
+
+        <p id="horizontal-span"></p>
+    </nav>
+
+    <!-- Tablet, Desktop Nav -->
+	<nav class="tablet-desktop">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="Info.html">Business Info</a></li>
+			<li><a href="product-services.html">Product/Services</a></li>
+			<li><a href="support.html">Support</a></li>
+		</ul>
+	</nav>
+
+    <main>
+        
+            
+                <h1>Store. The best way to buy the products you love.</h1>
+
+                <div class="grid-product">
+                    <figure class="grid-boxes">
+                    <a href="bag"><img id="Apple vision Pro" src="images/vision_pro.png" width="200"> </a>
+                    <div class="caption">Apple Vision Pro</div>
+                    </figure>
+
+                    <figure class="grid-boxes">
+                    <a href="bag"><img id="AirPods" src="images/airpods.png" width="200" ></a>
+                    <div class="caption">AirPods</div>
+                    </figure>
+
+                    <figure class="grid-boxes">
+                    <a href="bag"><img id="Desktop" src="images/laptop.png" width="200" ></a>
+                    <div class="caption">Laptop</div>
+                    </figure>
+
+                    <figure class="grid-boxes">
+                    <a href="bag"><img id="Mouse" src="images/mouse.png" width="150" ></a>
+                    <div class="caption">Mouse</div>
+                </figure>
+
+            </div>
+
+            <h1>The latest products</h1>
+            
+            <div class="grid-product">
+				<figure class="grid-boxes">
+					<img src="images/VR.png" width="300" alt="picture of VR world"></a>
+					<h4>Virtual Reality Now!!</h4>
+                    
+				</figure>
+
+				<figure class="grid-boxes">
+					<img src="images/music.png" alt="Music"></a>
+					<h4>Listen the best music with  </h4>
+                    <h4> the new airpods Pro Max </h4>
+                    
+				</figure>
+
+                <figure class="grid-boxes">
+					<img src="images/galaxyphone.jpg" alt="Picture of Phone"></a>
+					<h4>New phones!!</h4>
+                  
+				</figure>
+
+				<figure class="grid-boxes">
+					<img src="images/desktops.png" alt="Desktops"></a>
+					<h4>Best Deals</h4>
+                    
+				</figure>
+			</div>
+
+            <h1>Services</h1>
+            <div class="grid-product">
+                
+				<figure class="grid-support">
+					<a href="support.html"> <img src="images/support.png" width="300" alt="Tech Support"></a>
+					<h4>Need shopping assistance?</h4>
+				</figure>
+
+			</div>
+
+        </main>
+
+        
+        <footer>
+            <p>&copy; Copyright 2024. All Fictional Rights Reserved.</p>
+
+            <div id="site-dev">
+                <p>Made by:
+                    <a id="stefano" href="Portafolio.html">Stefano Lopez</a>
+                </p>
+            </div>
+        </footer>
+        </div>
+    
+    <script src="scripts/script.js"></script>
+</body>
+</html>

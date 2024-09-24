@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<!-- Page made by Jacob Davenport, Stefano Lopez, and Ben Pimentel -->
+
+<html lang="en">
+<head>
+	<title>Tech Trove</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Icon -->
+    <link rel="icon" type="image/png" href="images/Treasure_Chest.png">
+</head>
+
+<!--
+    Team Members and Pages Done:
+    ======================================================
+    JACOB: Home, Info, Jacob Portfolio
+    STEFANO: Home, Prodcut/Services, Stefano Portfolio
+    BEN: Home, Support, Ben Portfolio
+
+
+    WEB DEV. GROUP FINAL PROJECT CRITERIA
+    ======================================================
+    1. Repsonsive Design ✅
+        Used in stylesheet viewports, html viewport meta, etc.
+
+    2. Content to appear complete ✅
+        Pages have content necessart to type of page. Portfolio's have content
+
+    3. Team members did 1 page and 1 portfolio page. ✅
+        For 3 group members, there are a total of 7 pages. All worked on home page.
+
+    4. Comments to explain what each section does ✅
+        Comments used in html and stylesheets to explain each 'section'
+
+    5. Standard nav bar on one line (tablet-desktop) and 'hamburger' (mobile) ✅✅
+        Hamburger nav and its function complete for mobile. Tablet-Desktop show the standard nav bar on (nearly) all html pages
+
+        5.1. Use pseudo-classes for nav element ✅
+            Pseudo-classes used. Hover and active (desktop)
+
+    6. Use logo, make it sticky. ✅
+        Logo for "Tech Trove" used and made sticky with webkit-sticky too
+
+    7. Bottom of each page, name of team member who worked on page and link to their portfolio ✅
+        Working pages for overall website have name of person who worked on them with link to their portfolio in name.
+
+    8. Social Media icons and link for Facebook and Twitter on home page. ✅
+        Social media links in footer on main page using icons from chapter (we could not find ones we liked)
+
+    9. Bootstrap for 2 different elements. ✅
+        Bootstrap used on HOME page for banner or jumbotron. Bootstrap used on INFO page for its image
+
+    10., 11., 21., 22. Use of id, class. Styles applied to id, class ✅✅✅✅
+        Mashing all these together Id and Class used throughout html pages. Styles are applied to both class and id's
+
+    11. (See 10.) ✓
+
+    12. Embed map on 1 page. ✅
+        Map on Info page
+
+    13. One page includes table ✅
+        Table on Support page (tablet-desktop only. toggleable via button)
+
+    14. Form with 4 different inputs and submit ✅
+        Form with 4 different inputs (radio, checkbox, text area, email) and submit on Info page
+
+    15. At least 2 JaveScript functions used on DIFFERENT pages ✅
+        More than 2 JavaScript functions used. One for hamburger menu on all pages,
+        another for toggling of the table on SUPPORT page, and lastly for button on INFO page.
+
+    16. Use CSS grid layout on home ✅
+        CSS grid layout used on home page.
+
+    17. Proper text headings, typographical hierarchy ✅✅
+        Pages have proper use of h1, h2, h3, etc. followed by respective elements such as ul, ol, or p
+
+        17.1. Pull in font family to use. ✅
+            Quicksand font family pulled in and used for pages.
+
+    18. Include unique image on each page with appropriate wrapping ✅
+        Each page, including portfolio's and home, have a unique image used.
+
+    19. Link CSS stylesheet ✅
+        Used on all html pages. Including for those using Bootstrap, where our stylesheet is put after the Bootstrap link.
+        Pages not identical, however do have some similar look to one another.
+
+    20. Background color ✅
+        Cohesive background color used between pages.
+
+    21. (See 10.) ✓
+
+    22. (See 10.) ✓
+
+    23. Add border on a page. ✅
+        Border used for table on Support page and elements for nav on all pages.
+
+    24. Other styles ✅
+        Styles not listed here in criteria used on pages to attempt to make pages complete.
+
+    25. Animation on 2 different images, 2 different pages. ✅
+        One animation used on JACOB'S PORTFOLIO, another animation is used on SUPPORT page (tablet-desktop only)
+
+    26., 27. Tablet Media Query, 2 different styles applied. Desktop Media Query, 2 different styles applied. ✅✅
+        Tablet and Desktop media queries used on pages. Both have more than 2 different styles applied. Mobile hidden.
+
+    27. (see 26.) ✓
+-->
+
+
+<body>
+    <header>
+        <!-- Logo -->
+        <a href="index.html"><img class="logo-sticky" src="images/logo.png"></a>
+
+        <!-- hamburger here? -->
+        <div id="hamburger" class="mobile">
+            <a class="hamburger-icon" onclick="hamburgerToggle()">&#9776;</a>
+        </div>
+
+        <!-- shop cart, WIP -->
+        <div id="shop-cart">
+            <!-- Placeholder until we get shopping cart icon -->
+            <a href="shopping">&#9816;</a>
+        </div>
+
+        <!-- 'search' bar. text input with button to click and search -->
+        <form id="search">
+            <input type="text" name="search-query" placeholder="Search">
+            <!-- magnifying glass emoji is placeholder -->
+            <input type="button" id="search-button" name="search-submit" value="&#128269;">
+        </form>
+    </header>
+
+
+    <!-- Mobile nav with hamburger -->
+    <nav class="mobile">
+        <div id="hamburger-nav-links">
+        <!--TODO update these links with correct .html files-->
+            <a href="index.html">Home</a>
+            <a href="Info.html">Business Info</a>
+            <a href="product-services.html">Product/Services</a>
+            <a href="support.html">Support</a>
+        </div>
+
+        <p id="horizontal-span"></p>
+    </nav>
+
+    <!-- Tablet, Desktop Nav -->
+	<nav class="tablet-desktop">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="Info.html">Business Info</a></li>
+			<li><a href="product-services.html">Product/Services</a></li>
+			<li><a href="support.html">Support</a></li>
+		</ul>
+	</nav>
+
+    <!-- Tech Trove Banner img -->
+    <div class="jumbotron-fluid">
+        <div class="container index-banner text-white">
+            <h1>Tech Trove</h1>
+            <p>A bounty of tech awaits.</p>
+        </div>
+        <div id="banner-img">
+            <img src="images/laptop_banner2 - Copy (2).jpg" alt="glowing laptop with a peculiar keyboard layout">
+        </div>
+    </div>
+
+
+    <!-- Main site content -->
+    <div id="home-container">
+        <main>
+
+            <!-- Link to product page here -->
+            <h1 id="special-important" class="first-header">Featured Items</h1>
+
+            <!-- These would go to their individual product-type pages, but for now they'll just point to the main product/service page -->
+            <div class="grid-home">
+				<figure class="grid-prod-box">
+					<figcaption class="product-cap"><a href="product-services.html">Desktops</a></figcaption>
+				</figure>
+
+				<figure class="grid-prod-box">
+					<figcaption class="product-cap"><a href="product-services.html">Laptops</a></figcaption>
+				</figure>
+
+                <figure class="grid-prod-box">
+					<figcaption class="product-cap"><a href="product-services.html">Phones</a></figcaption>
+				</figure>
+
+				<figure class="grid-prod-box">
+					<figcaption class="product-cap"><a href="product-services.html">More</a></figcaption>
+				</figure>
+			</div>
+
+            <!-- Basic info for Tech Trove -->
+            <h1>Welcome to Tech Trove</h1>
+                <!-- What things are offered -->
+                <h2>What We Offer!</h2>
+                <p>Explore our vast selection of cutting-edge electronics, from smartphones to laptops and accessories, all curated to enhance your digital lifestyle. Benefit from our commitment to quality and innovation, making us your go-to destination for the latest in tech.</p>
+
+                <!-- Link to portfolio's here -->
+                <h2>Our "Most Excellent" Employees!</h2>
+                    <p>Meet members of our outstanding team! Their unique skills ensure excellent customer service and the latest tech offerings here at Tech Trove. Discover their professional achievements in their digital portfolios below.</p>
+                    <div class="grid-members">
+				        <figure class="grid-member-box">
+                            <a href="Jacob_Port.html"><img src="images/j-port-img-home.png" alt="picture of jacob" id="port-img"></a>
+                        </figure>
+
+                        <figure class="grid-member-box">
+                            <a href="Portafolio.html"><img src="images/s-port-img-home.png" alt="picture of stefano" id="port-img"></a>
+                        </figure>
+
+                        <figure class="grid-member-box">
+                            <a href="b-portfolio.html"><img src="images/ben-port-img-alt.png" alt="picture of ben" id="port-img"></a>
+                        </figure>
+                    </div>
+
+
+                <div class="tablet-desktop">
+                    <!-- Customer reviews for tablet and desktop only -->
+                    <h2>Customer Reviews!</h2>
+                    <p>Explore what people just like you are saying about Tech Trove! Get firsthand accounts to help you make informed decisions before your next purchase. Join our Tech Trove community and benefit from honest reviews!</p>
+
+                    <!-- 
+                        &#9733; is ★
+                        &#9734; is ☆
+                    -->
+                    <div class="grid-reviews">
+				        <section class="grid-review-box">           
+                            <blockquote>
+                                <h3>Natalie's Review</h3>
+                                <p>"I just love the laptops Tech Trove sells! They can even come in a vast variety of varying colours!"</p>
+                                <p id="review-stars">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+                            </blockquote>
+                        </section>
+
+                        <section class="grid-review-box">           
+                            <blockquote>
+                                <h3>Frank's Review</h3>
+                                <p>"i mean could be better ig but still gud"</p>
+                                <p id="review-stars">&#9733; &#9733; &#9733; &#9733; &#9734;</p>
+                            </blockquote>
+                        </section>
+
+                        <section class="grid-review-box">
+                            <blockquote>
+                                <h3>Diego's Review</h3>
+                                <p>"Tech Trove has a wide assortment of all the components and devices I'm looking for! Well worth the wait!"</p>
+                                <p id="review-stars">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+                            </blockquote>
+                        </section>
+
+                        <section class="grid-review-box">           
+                            <blockquote>
+                                <h3>[Deleted]'s Review</h3>
+                                <p>"(This review has been deleted by the original author.)"</p>
+                                <p id="review-stars">&#9733; &#9734; &#9734; &#9734; &#9734;</p>
+                            </blockquote>
+                        </section>
+                    </div>
+                </div>
+
+
+                <!-- newsletter mail submission form -->
+                <h1>Get in Touch with Us!</h1>
+                    <div class="h-newsletter">
+                        <h2>Newsletter</h2>
+                            <p>Sign up for our newsletter to get monthly updates, including new products, deals, and more!</p>
+                            <form id="email">
+                                <input type="email" name="email" placeholder="mail@example.com">
+
+                                <input type="submit" value="Submit">
+                            </form>
+                    </div>
+        </main>
+
+        <!-- footer content -->
+        <footer>
+            <hr>
+            <p>&copy; Copyright 2024. All Fictional Rights Reserved.</p>
+
+            <!-- Social media icons for facebook and twitter here -->
+            <div id="socials">
+                <p>
+                    <a href="tech-trove-facebook"><img src="images/facebook-logo.png" alt="logo of facebook"></a>
+                    <a href="tech-trove-twitter"><img src="images/twitter-logo.png" alt="better/best logo of twitter not X"></a>
+                </p>
+            </div>
+
+            <div id="site-dev">
+                <p>Made by:
+                    <a id="jacob" href="Jacob_Port.html">Jacob Davenport</a>,
+                    <a id="stefano" href="Portafolio.html">Stefano Lopez</a>,
+                    <a id="ben" href="b-portfolio.html">Ben Pimentel</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- javascript -->
+    <script src="scripts/script.js"></script>
+</body>
+</html>
