@@ -1,0 +1,19 @@
+def brute_force_crack(password):
+    """
+    Brute‑force search over lowercase, uppercase, digits, and punctuation.
+    """
+    start_time = time.time()
+    # build the full character set
+    chars = (
+        string.ascii_lowercase +    # a–z
+        string.ascii_uppercase +    # A–Z
+        string.digits +             # 0–9
+        string.punctuation          # special chars !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+    )
+    # iterate length = 1, 2, 3, … until we find it
+    for length in itertools.count(1):
+        for attempt_tuple in itertools.product(chars, repeat=length):
+            attempt = ''.join(attempt_tuple)
+            if attempt == password:
+                elapsed = time.time() - start_time
+                return attempt, elapsed
